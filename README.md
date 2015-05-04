@@ -23,7 +23,7 @@ The following variables are used to define a rule:
         zone: 
         permanent:
 
-    for example the default is to allow SSH on the public interface: 
+For example the default is to allow SSH on the public interface: 
 
     firewalld_rules: 
       ssh:
