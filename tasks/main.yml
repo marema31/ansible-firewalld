@@ -11,5 +11,5 @@
 
 - name: updating firewall rules
   firewalld: port={{item.value.port}}/{{item.value.protocol}} permanent={{item.value.permanent}} state={{item.value.state }} zone={{item.value.zone}}
-  with_dict: firewalld_rules
+  with_dict: "{{firewalld_rules}}"
   notify: restart firewalld
